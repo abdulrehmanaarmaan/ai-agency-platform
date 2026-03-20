@@ -65,7 +65,7 @@ const Analytics = () => {
                             map((h, i) => (
                                 <div key={i} className={`flex-1 flex flex-col justify-end gap-1 group cursor-pointer ${i > 11 ? 'hidden sm:flex' : ''}`}>
                                     <div
-                                        className="w-full bg-gradient-to-t from-purple-600/10 to-purple-500/40 rounded-t-sm transition-all duration-500 group-hover:to-purple-400 group-hover:from-purple-500/30"
+                                        className="w-full bg-linear-to-t from-purple-600/10 to-purple-500/40 rounded-t-sm transition-all duration-500 group-hover:to-purple-400 group-hover:from-purple-500/30"
                                         style={{ height: `${h}%` }}
                                     />
                                     <div
