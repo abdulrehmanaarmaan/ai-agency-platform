@@ -78,7 +78,7 @@ const Analytics = () => {
                 </div>
                 {/* Breakdown Sidebar */}
                 <div className="space-y-6 md:space-y-8">
-                    <div className="bg-slate-900/50 border border-white/5 rounded-[1.5rem] md:rounded-[2.5rem] p-6 md:p-8">
+                    <div className="bg-slate-900/50 border border-white/5 rounded-3xl md:rounded-[2.5rem] p-6 md:p-8">
                         <h3 className="text-xs font-black text-white uppercase tracking-widest mb-6 flex items-center gap-2">
                             <Layers size={16} className="text-purple-500" />
                             Resource Allocation
@@ -89,7 +89,7 @@ const Analytics = () => {
                             <ProgressItem label="Vector Search" percentage={15} color="bg-emerald-500" />
                         </div>
                     </div>
-                    <div className="bg-gradient-to-br from-purple-600 to-indigo-700 rounded-[1.5rem] md:rounded-[2.5rem] p-6 md:p-8 shadow-[0_20px_40px_rgba(147,51,234,0.2)]">
+                    <div className="bg-linear-to-br from-purple-600 to-indigo-700 rounded-3xl md:rounded-[2.5rem] p-6 md:p-8 shadow-[0_20px_40px_rgba(147,51,234,0.2)]">
                         <Zap className="text-white mb-4" size={24} md:size={28} />
                         <h3 className="text-lg md:text-xl font-black text-white leading-tight">Predictive
                             Scaling is Active.</h3>
@@ -105,7 +105,7 @@ const Analytics = () => {
 // --- HELPER COMPONENTS ---
 
 const MetricTile = ({ label, value, trend, isUp, subtext }) => (
-    <div className="bg-slate-900/50 border border-white/5 p-6 md:p-8 rounded-[1.5rem] md:rounded-[2.5rem] relative overflow-hidden group">
+    <div className="bg-slate-900/50 border border-white/5 p-6 md:p-8 rounded-3xl md:rounded-[2.5rem] relative overflow-hidden group">
         <div className="relative z-10">
             <p className="text-slate-500 text-[9px] md:text-[10px] font-black uppercase tracking-widest mb-1">{label}</p>
             <div className="flex items-end gap-2 md:gap-3">
