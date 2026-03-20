@@ -23,7 +23,7 @@ const Team = () => {
     ];
 
     return (
-        <div className="mx-auto space-y-6 md:space-y-10 animate-in fade-in duration-700 px-2 pb-10">
+        <div className="mx-auto space-y-6 md:space-y-10 animate-in fade-in duration-700">
             {/* 1. HEADER & ACTIONS - Vertical stack on Mobile, Row on Desktop */}
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
                 <div className="space-y-1">

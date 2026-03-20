@@ -80,12 +80,12 @@ const Dashboard = () => {
                             <Bell size={20} />
                             <span className="absolute top-2 right-2 w-2 h-2 bg-purple-500 rounded-full border-2 border-slate-950"></span>
                         </button>
-                        <div className="h-10 w-10 rounded-full bg-linear-to-tr from-purple-600 to-blue-600 border border-white/20 cursor-pointer"></div>
+                        <div className="h-10 w-10 rounded-full bg-to-tr from-purple-600 to-blue-600 border border-white/20 cursor-pointer"></div>
                     </div>
                 </header>
 
                 {/* Page Content */}
-                <div className="p-8 relative">
+                <div className="relative p-8">
                     {/* Subtle Background Glows to match landing page */}
                     <div className="absolute top-0 right-0 w-100 h-100 bg-purple-600/5 blur-[120px] rounded-full pointer-events-none" />
 
