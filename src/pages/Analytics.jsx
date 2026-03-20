@@ -44,7 +44,7 @@ const Analytics = () => {
             {/* 3. MAIN DATA VISUALIZATION */}
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8">
                 {/* Large Scale Performance Graph */}
-                <div className="lg:col-span-2 bg-slate-900/50 border border-white/5 rounded-[1.5rem] md:rounded-[2.5rem] p-6 md:p-8">
+                <div className="lg:col-span-2 bg-slate-900/50 border border-white/5 rounded-3xl md:rounded-[2.5rem] p-6 md:p-8">
                     <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8 md:mb-10">
                         <div>
                             <h3 className="text-lg md:text-xl font-black text-white">Inference Load</h3>
