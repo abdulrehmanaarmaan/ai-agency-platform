@@ -15,8 +15,7 @@ const Agents = () => {
             {/* 1. HEADER & ACTION BAR */}
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6">
                 <div className="space-y-1">
-                    <h1 className="text-2xl md:text-3xl font-black tracking-tighter text-white">AI Agents</
-                    h1>
+                    <h1 className="text-2xl md:text-3xl font-black tracking-tighter text-white">AI Agents</h1>
                     <p className="text-slate-500 text-xs md:text-sm font-medium">
                         Deploy and manage your autonomous intelligence units.
                     </p>
@@ -42,7 +41,7 @@ const Agents = () => {
 
 const AgentCard = ({ agent }) => (
     /* Reduced padding on mobile (p-6) vs desktop (p-8) and slightly smaller corner radius for mobile */
-    <div className="bg-slate-900/50 border border-white/5 rounded-[1.5rem] md:rounded-[2.5rem] p-6 md:p-8 hover:border-purple-500/30 transition-all group relative overflow-hidden">
+    <div className="bg-slate-900/50 border border-white/5 rounded-3xl md:rounded-[2.5rem] p-6 md:p-8 hover:border-purple-500/30 transition-all group relative overflow-hidden">
 
 
         {/* Status Indicator Glow */}
@@ -95,7 +94,7 @@ const AgentCard = ({ agent }) => (
 
             {/* Action Buttons - Adjusted for clickability on touch screens */}
             <div className="flex gap-2 md:gap-3">
-                <button className="flex-[2] bg-white/5 hover:bg-white/10 border border-white/10 py-3 rounded-xl text-[9px] md:text-[10px] font-black uppercase tracking-widest text-slate-300 transition-all flex items-center justify-center gap-2">
+                <button className="flex-2 bg-white/5 hover:bg-white/10 border border-white/10 py-3 rounded-xl text-[9px] md:text-[10px] font-black uppercase tracking-widest text-slate-300 transition-all flex items-center justify-center gap-2">
                     <Settings2 size={14} />
                     <span className="hidden xs:inline">Config</span>
                 </button>

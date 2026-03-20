@@ -52,9 +52,9 @@ const Team = () => {
                     color="text-blue-400" bgColor="bg-blue-500/10" />
             </div>
             {/* 3. MAIN CONTENT CONTAINER */}
-            <div className="bg-slate-900/40 border border-white/5 rounded-[2rem] overflow-hidden backdrop-blur-md">
+            <div className="bg-slate-900/40 border border-white/5 rounded-4xl overflow-hidden backdrop-blur-md">
                 <div className="p-6 md:p-8 border-b border-white/5 flex justify-between items-center">
-                    <h3 className="text-base md:text-lg font-black text-white uppercase tracking-widest text-[10px] md:text-sm">Collaborators</h3>
+                    <h3 className="text-base md:text-lg font-black text-white uppercase tracking-widest text-[10px]">Collaborators</h3>
                     <div className="flex items-center gap-2 text-emerald-500 text-[10px] font-black uppercase px-3 py-1.5 rounded-full bg-emerald-500/5 border border-emerald-500/10">
                         <div className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
                         3 Online
@@ -63,10 +63,10 @@ const Team = () => {
                 {/* --- MOBILE VIEW: Card List (Hidden on Desktop) --- */}
                 <div className="md:hidden divide-y divide-white/5">
                     {team.map(member =>
-                        <div key={member.id} className="p-5 space-y-4 hover:bg-white/[0.02] transition-colors">
+                        <div key={member.id} className="p-5 space-y-4 hover:bg-white/2 transition-colors">
                             <div className="flex items-start justify-between">
                                 <div className="flex items-center gap-3">
-                                    <div className="h-12 w-12 rounded-2xl bg-gradient-to-br from-purple-600 to-indigo-600 flex items-center justify-center text-sm font-black text-white shadow-xl">
+                                    <div className="h-12 w-12 rounded-2xl bg-linear-to-br from-purple-600 to-indigo-600 flex items-center justify-center text-sm font-black text-white shadow-xl">
                                         {member.avatar}
                                     </div>
                                     <div className="min-w-0">
@@ -105,10 +105,10 @@ const Team = () => {
                         </thead>
                         <tbody className="divide-y divide-white/5">
                             {team.map(member =>
-                                <tr key={member.id} className="group hover:bg-white/[0.02] transition-colors">
+                                <tr key={member.id} className="group hover:bg-white/2 transition-colors">
                                     <td className="px-8 py-6">
                                         <div className="flex items-center gap-4">
-                                            <div className="h-10 w-10 flex-shrink-0 rounded-xl bg-gradient-to-br from-purple-600 to-indigo-600 flex items-center justify-center text-xs font-black text-white shadow-lg">
+                                            <div className="h-10 w-10 shrink-0 rounded-xl bg-linear-to-br from-purple-600 to-indigo-600 flex items-center justify-center text-xs font-black text-white shadow-lg">
                                                 {member.avatar}
                                             </div>
                                             <div className="min-w-0">
@@ -153,8 +153,8 @@ const Team = () => {
 // --- HELPER COMPONENTS ---
 
 const SummaryCard = ({ icon, label, value, color, bgColor }) => (
-    <div className="bg-slate-900/50 border border-white/5 p-6 rounded-[2rem] flex items-center gap-5 transition-all hover:border-white/10">
-        <div className={`p-4 rounded-2xl ${color} ${bgColor} flex-shrink-0`}>
+    <div className="bg-slate-900/50 border border-white/5 p-6 rounded-4xl flex items-center gap-5 transition-all hover:border-white/10">
+        <div className={`p-4 rounded-2xl ${color} ${bgColor} shrink-0`}>
             {icon}
         </div>
         <div className="min-w-0">

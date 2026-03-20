@@ -54,7 +54,7 @@ const Overview = () => {
                             {[40, 70, 45, 90, 65, 80, 50, 95, 75, 60, 85, 45, 70, 55].map((h, i) => (
                                 <div
                                     key={i}
-                                    className={`w-full bg-gradient-to-t from-purple-600/20 to-purple-500 rounded-t-sm md:rounded-t-lg transition-all duration-1000 ${i > 8 ?
+                                    className={`w-full bg-linear-to-t from-purple-600/20 to-purple-500 rounded-t-sm md:rounded-t-lg transition-all duration-1000 ${i > 8 ?
                                         'hidden sm:block' : ''}`}
                                     style={{ height: `${h}%` }}
                                 />
@@ -63,7 +63,7 @@ const Overview = () => {
                     </div>
                 </div>
                 {/* Recent Activity Feed */}
-                <div className="bg-slate-900/50 border border-white/5 rounded-[1.5rem] md:rounded-[2.5rem] p-6 md:p-8">
+                <div className="bg-slate-900/50 border border-white/5 rounded-3xl md:rounded-[2.5rem] p-6 md:p-8">
                     <h3 className="text-lg md:text-xl font-black mb-6">Recent Activity</h3>
                     <div className="space-y-5 md:space-y-6">
                         <ActivityItem
@@ -99,7 +99,7 @@ const Overview = () => {
 // --- HELPER COMPONENTS ---
 
 const StatCard = ({ title, value, change, icon }) => (
-    <div className="bg-slate-900/50 border border-white/5 p-5 md:p-6 rounded-[1.5rem] md:rounded-[2rem] hover:border-purple-500/30 transition-all group">
+    <div className="bg-slate-900/50 border border-white/5 p-5 md:p-6 rounded-3xl md:rounded-4xl hover:border-purple-500/30 transition-all group">
         <div className="flex justify-between items-start mb-4">
             <div className="p-2.5 md:p-3 bg-slate-950 rounded-2xl border border-white/5 group-hover:scale-110 transition-transform">
                 {icon}
@@ -118,7 +118,7 @@ const StatCard = ({ title, value, change, icon }) => (
 
 const ActivityItem = ({ label, time, status }) => (
     <div className="flex items-start gap-3 md:gap-4 group cursor-pointer">
-        <div className="mt-1.5 flex-shrink-0">
+        <div className="mt-1.5 shrink-0">
             <div className="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-purple-500 shadow-[0_0_10px_rgba(168,85,247,0.5)]" />
         </div>
         <div className="flex-1 border-b border-white/5 pb-4 group-last:border-0 min-w-0">
@@ -130,7 +130,7 @@ const ActivityItem = ({ label, time, status }) => (
                 <span className="text-[9px] md:text-[10px] text-purple-500/50 font-black uppercase tracking-widest">[{status}]</span>
             </div>
         </div>
-        <ArrowUpRight size={14} className="text-slate-700 group-hover:text-white transition-colors flex-shrink-0 mt-1" />
+        <ArrowUpRight size={14} className="text-slate-700 group-hover:text-white transition-colors shrink-0 mt-1" />
     </div>
 );
 

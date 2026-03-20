@@ -55,7 +55,7 @@ const Settings = () => {
                             <div className="w-1 h-4 bg-purple-500 rounded-full" />
                             API Infrastructure
                         </h3>
-                        <div className="bg-slate-900/50 border border-white/5 rounded-[1.5rem] md:rounded-3xl p-5 md:p-6 space-y-6">
+                        <div className="bg-slate-900/50 border border-white/5 rounded-3xl md:rounded-3xl p-5 md:p-6 space-y-6">
                             <div className="flex items-center justify-between gap-4">
                                 <div>
                                     <p className="text-sm font-bold text-white leading-none">Production API
@@ -63,7 +63,7 @@ const Settings = () => {
                                     <p className="text-[11px] text-slate-500 mt-2 leading-relaxed">Used to
                                         authenticate your AI agents in external apps.</p>
                                 </div>
-                                <button className="p-2.5 bg-white/5 hover:bg-white/10 rounded-xl text-slate-400 transition-all flex-shrink-0">
+                                <button className="p-2.5 bg-white/5 hover:bg-white/10 rounded-xl text-slate-400 transition-all shrink-0">
                                     <RefreshCw size={18} />
                                 </button>
                             </div>
@@ -116,7 +116,7 @@ const Settings = () => {
 // --- HELPER COMPONENT ---
 
 const SettingsNav = ({ icon, label, active }) => (
-    <button className={`flex items-center justify-between px-5 py-3.5 rounded-xl transition-all group flex-shrink-0 lg:w-full ${active
+    <button className={`flex items-center justify-between px-5 py-3.5 rounded-xl transition-all group shrink-0 lg:w-full ${active
         ? 'bg-purple-600/10 text-purple-400 border border-purple-500/20 shadow-[0_0_15px_rgba(168,85,247,0.1)]'
         : 'text-slate-500 hover:bg-white/5 hover:text-white'
         }`}>
